@@ -51,14 +51,9 @@ body {
 #second_block {
     width: 100%;
     height: auto;
-    background-color: #F5F6F8;
 }
 
-#fourth_block {
-    background-color: #F5F6F8;
-}
-
-#sixth_block {
+#second_block, #fourth_block, #sixth_block {
     background-color: #F5F6F8;
 }
 
@@ -103,20 +98,20 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-	.left-textbox, .right-textbox {
-		padding-right: 15%;
-		padding-left: 15%;
-		padding-bottom: 5%;
-	}
+    .left-textbox, .right-textbox {
+        padding-right: 15%;
+        padding-left: 15%;
+        padding-bottom: 5%;
+    }
 
-	.left-text {
-		padding-left: 5%;
-	}
+    .left-text {
+        padding-left: 5%;
+    }
 
-	.right-text {
-		padding-right: 0;
-		padding-left: 5%;
-	}
+    .right-text {
+        padding-right: 0;
+        padding-left: 5%;
+    }
 }
 
 #myBtn {
