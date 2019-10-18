@@ -37,6 +37,8 @@
     </ul>
 	</div>
 </nav>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <div id="first_block">
     <div id="first_text_block">
         <h1 id="first_title">Titel</h1>
@@ -216,6 +218,23 @@
         </div>
     </div>
 </div>
+<script>
+	var mybutton = document.getElementById("myBtn");
 
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>
 </body>
 </html>
